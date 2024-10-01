@@ -1,0 +1,5 @@
+docker run -d \
+    -p 8075:8081 \
+    --restart=always \
+    -v ~/ytdl:/downloads \
+    ghcr.io/alexta69/metube

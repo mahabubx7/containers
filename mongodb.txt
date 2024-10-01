@@ -1,0 +1,8 @@
+docker run -d \
+    -p 27017:27017 \
+    --name=mongodb \
+    --restart=always \
+    -v ~/.dckr/mongodb:/data/db \
+    -e MONGO_INITDB_ROOT_USERNAME=admin \
+    -e MONGO_INITDB_ROOT_PASSWORD=mongo0306 \
+    mongo:6.0

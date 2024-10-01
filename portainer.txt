@@ -1,0 +1,8 @@
+docker run -d \
+    --restart=always \
+    -v ~/.dckr/portainer:/portainer_data \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    -p 9000:9000 \
+    -p 9443:9443 \
+    --name=portainer \
+    portainer/portainer-ce

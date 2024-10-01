@@ -1,0 +1,8 @@
+docker run -d \
+    -p 6379:6379 \
+    --name=redis \
+    --restart=always \
+    -v ~/.dckr/redis:/redis_data \
+    -e REDIS_PASSWORD=your_password_here \
+    redis \
+    --requirepass your_password_here
